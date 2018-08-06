@@ -1,7 +1,7 @@
 # revproxyhashry
 
 revproxyhashry generates bcrypt hashes of passwords to be used with the reverse proxy 
-[revproxyry](https://bitbucket.org/parqueryopen/revproxyry).
+[revproxyry](https://github.com/Parquery/revproxyry).
 
 ## Related Projects
 
@@ -22,28 +22,22 @@ htpasswd -bnBC 10 "" "some-password"
 
 ### Pre-compiled Binaries
 
-We provide the following pre-compiled binaries of the revproxyhashry:
-
-Version|Arch|Release
----|---|---
-1.0.0|Linux x64|[revproxyhashry-1.0.0-linux-x64.tar.gz](https://bitbucket.org/parqueryopen/revproxyhashry/downloads/revproxyhashry-1.0.0-linux-x64.tar.gz)
+We provide pre-compiled binaries of the revproxyhashry. Please have a look at the 
+[release page](https://github.com/Parquery/revproxyhashry/releases).
 
 To install the release, just unpack it somewhere, add `bin/` directory to 
 your `PATH` and you are ready to go.
 
 ### Debian Packages
 
-We also provide a Debian package:
-
-Version|Arch|Release
----|---|---
-1.0.0|amd64|[revproxyhashry_1.0.0_amd64.deb](https://bitbucket.org/parqueryopen/revproxyhashry/downloads/revproxyhashry_1.0.0_amd64.deb)
+We provide Debian packages as well. Please also have a look at the
+[release page](https://github.com/Parquery/revproxyhashry/releases).
 
 For example, to download the package and install it, call:
 
 ```bash
-wget https://bitbucket.org/parqueryopen/revproxyhashry/downloads/revproxyhashry_1.0.0_amd64.deb
-sudo dpkg -i revproxyhashry_1.0.0_amd64.deb
+wget https://github.com/Parquery/revproxyhashry/releases/download/v1.0.1/revproxyhashry_1.0.1_amd64.deb
+sudo dpkg -i revproxyhashry_1.0.1_amd64.deb
 ```
 
 ### Compile From Source
@@ -52,7 +46,7 @@ Assuming you have a working Go environment, you can install the _revproxyhashry_
 from the source by running:
 
 ```bash
-go get -U bitbucket.org/parqueryopen/revproxyhashry/revproxyhashry
+go get -U github.com/Parquery/revproxyhashry
 ```
 
 ## Usage
@@ -92,13 +86,13 @@ revproxyhashry -cost 14 "some-password"
 * Clone the repository beneath your `GOPATH`:
 
 ```bash
-go get bitbucket.org/parqueryopen/revproxyhashry
+go get github.com/Parquery/revproxyhashry
 ```
 
-* Change to the _revproxyry_ directory:
+* Change to the _revproxyhashry_ directory:
 
 ```bash
-cd $GOPATH/src/bitbucket.org/parqueryopen/revproxyhashry
+cd $GOPATH/src/github.com/Parquery/revproxyhashry
 ```
 
 * If you want to build everything in the project:
